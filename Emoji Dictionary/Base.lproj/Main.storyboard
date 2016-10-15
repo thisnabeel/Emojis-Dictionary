@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="964" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="i4x-l0-lWF">
             <objects>
-                <viewController id="Mm6-GO-mZm" sceneMemberID="viewController">
+                <viewController id="Mm6-GO-mZm" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X7s-e5-OLH"/>
                         <viewControllerLayoutGuide type="bottom" id="r6n-eW-SIW"/>
@@ -71,6 +71,10 @@
                             <constraint firstItem="0Ak-gi-Mgg" firstAttribute="centerX" secondItem="cdB-e5-Yre" secondAttribute="centerX" id="eWe-g2-mph"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="0Ak-gi-Mgg" id="PE6-FX-eJe"/>
+                        <outlet property="emojiLabel" destination="CKp-iu-5e8" id="qAX-cA-Hik"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldy-OB-pft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
