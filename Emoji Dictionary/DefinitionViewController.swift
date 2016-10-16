@@ -10,9 +10,11 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
-    var emoji = "NO EMOJI!"
+    var emoji = Emoji()
     
 
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     
@@ -21,15 +23,10 @@ class DefinitionViewController: UIViewController {
         
         // After Load
         
-        emojiLabel.text = emoji
-        
-        if emoji == "🍕" {
-            definitionLabel.text = "This is a Pizza!"
-        } else {
-            definitionLabel.text = "Hello!"
-
-        }
-        
+        emojiLabel.text = emoji.stringEmoji
+        definitionLabel.text = emoji.definition
+        categoryLabel.text = "Category: \(emoji.category)"
+        birthYearLabel.text = "Birthyear: \(emoji.birthYear)"
         
     }
 

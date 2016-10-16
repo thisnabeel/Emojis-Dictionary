@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Emoji {
+    var stringEmoji = ""
+    var definition = ""
+    var category = ""
+    var birthYear = 0
+}
